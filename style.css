@@ -2,6 +2,10 @@
   height: 100%;
 } */
 
+/* TODO: have the hamburger menu change into an X*/
+/* TODO: change the color of the hamburger menu */
+/* TODO: decrease the spacing in the hamburger menu */
+
 body {
   background-color: #8dbefe;
   padding: 0;
@@ -95,8 +99,8 @@ textarea#answer, #answer-preview {
 }
 
 #menu > * {
-  padding: 1rem;
-  padding-right: 4rem;
+  padding: .75rem;
+  padding-right: 3rem;
   cursor: pointer;
 }
 
