@@ -17,27 +17,34 @@
 <script defer src="https://apis.google.com/js/api.js"></script>
 <script type="module" src="dashboard.js"></script>
 <script async type="module" src="menu.js"></script>
-<title>Aleth</title>
+<title>Study Tools</title>
 <div id="main">
   <table id="dashboard">
     <thead>
       <tr>
         <th></th>
-        <th class="date">Created</th>
-        <th class="date">Edited</th>
-        <th class="date">Due</th>
-        <th class="date">Last revision</th>
+        <th class="date">Deck Name</th>
+        <th class="date">Last Reviewed</th>
+        <th class="date">Memorization Progress</th>
+        <th class="date">Character Writing Progress</th>
       </tr>
     </thead>
     <tbody id="dashboard-body">
     </tbody>
   </table>
+  
+  <p>Would you like to create your own set?</p>
+  <p><link ref="create.html">Click Here</p>
+
 </div>
 <div id="menu" style="display:none;">
+
   <div onclick="location.href='.'">Home</div>
-  <div id="drive-in" style="display:none;">Enable synchronization with Google Drive</div>
-  <div id="drive-out" style="display:none;">Sign out of Google Drive</div>
   <div onclick="location.href='edit.html'">Create new card</div>
   <div onclick="location.href='about.html'">About Aleth</div>
+
+  <div id="drive-in" style="display:none;">Enable synchronization with Google Drive</div>
+  <div id="drive-out" style="display:none;">Sign out of Google Drive</div>
+
 </div>
 <button id="hamburger" type="button">&#9776;</button>

@@ -1,38 +1,154 @@
 <!doctype html>
+<!-- This website template was created by: Rebekah Rudd -->
+
+<!--notes: 
+
+-->
+
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="img/icon-6.png" sizes="6x6">
-<link rel="icon" type="image/png" href="img/icon-12.png" sizes="12x12">
-<link rel="icon" type="image/png" href="img/icon-18.png" sizes="18x18">
-<link rel="icon" type="image/png" href="img/icon-24.png" sizes="24x24">
-<link rel="icon" type="image/png" href="img/icon-48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="img/icon-60.png" sizes="60x60">
-<link rel="icon" type="image/png" href="img/icon-120.png" sizes="120x120">
-<link rel="icon" type="image/png" href="img/icon-180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="img/icon-240.png" sizes="240x240">
-<link rel="icon" type="image/png" href="img/icon-480.png" sizes="480x480">
-<link rel="icon" type="image/png" href="img/icon-516.png" sizes="516x516">
-<link href="style.css" rel="stylesheet" type="text/css">
-<title>Aleth</title>
-<div id="placeholder">
-  <p><a href="https://aleth.eu">Aleth</a> is a simple flashcard application made by <a href="https://thomash.fr">Thomas HUET</a>.</p>
-  <p>
-    Aleth allows you to create flashcards to help you remember anything you want.
-    Create a new card whenever you learn something new and Aleth will make sure you never forget it.
-    <br>
-    You should review your cards every day (it's OK to skip a day but it means you'll have more cards to review the next day).
-    Reviewing cards usually takes only a few minutes per day.
-    <br>
-    Aleth was designed to be used as described in <a href="http://augmentingcognition.com/ltm.html">this (rather long) essay</a>.
-  </p>
-  <p>
-    Aleth's focus is on simplicity.
-    If you would like more features such as creating separate decks and sharing them, I recommend you try <a href="https://apps.ankiweb.net">Anki</a> which has a large number of <a href="https://ankiweb.net/shared/decks/">premade decks</a> for a wide variety of topics.
-  </p>
-  <p>
-    This application is open-source (<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3</a>) and the source code is available on <a href="https://github.com/thomas-huet/aleth">GitHub</a>.
-    Any help improving it is welcome.
-    You can submit bug reports, write new code or design a nicer interface.
-  </p>
-</div>
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/png" href="img/logo.png" sizes="6x6"> -->
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Mandarin Study Tools</title>
+</head>
+
+<body>
+
+  <!-- the menu works on the cardsets.html page -->
+  <!-- <div id="container"> -->
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <!-- <div id="menu-links"> -->
+          <!-- <a href="about.html">Home</a>  -->
+          <!-- Maybe make drop down for HSK vs IC -->
+
+          <!-- <a href="cardsets.html">Study Sets</a>
+          <a href="memorization.html">Memorization Tips & Tricks</a>
+          <a href="culture.html">Cultural Connections</a> 
+          <a href="login.html">Login/Create Account</a> -->
+          <div id="menu" style="display:none;">
+            <div onclick="location.href='cardsets.html'">Study Sets </div>
+            <div onclick="location.href='memorization.html'">Memorization Tips & Tricks</div>
+            <div onclick="location.href='culture.html'">Cultural Connections</div>
+            <div onclick="location.href='login.html'">Login/Create Account</div>
+          </div>
+          <button id="hamburger" type="button">&#9776;</button>
+
+      <!-- </div> -->
+    
+      <!-- <a id="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div></a> -->
+      
+    </nav>
+
+    <!-- this section id is not working rn - but I might actually  -->
+    <!-- not do the section divisor because I ended up putting the logo -->
+    <!-- and header side by side -->
+  <section id="intro">
+
+  <section class="intro-color">
+    <!-- Use the header area for the website name or logo -->
+    <div class="top-division">
+    <!-- <header> -->
+      <!-- this is a weird space in the intro that I want to get rid of -->
+      <!-- <a href="about.html"><img src="img/logo.jpg" alt="Mandarin Study Tools Logo" width="150" height="150"></a> -->
+      <img src="img/logo.jpg" alt="Mandarin Study Tools Logo" width="150" height="150">
+    <!-- </header> -->
+  </div>
+
+  <div class="top-division">
+    <h1>Mandarin Study Tools</h1>
+  </div>
+
+  </section>
+
+  <!-- </div> -->
+  <section>
+    <nav class="tablet-desktop">
+      <ul> 
+          <li><a href="cardsets.html">Study Sets</a> </li>
+          <li><a href="memorization.html">Memorization Tips & Tricks</a> </li>
+          <li><a href="culture.html">Cultural Connections</a> </li>
+          <li><a href="login.html">Login/Create Account</a></li>
+      </ul>
+    </nav>
+  </section>
+</section>
+
+<main>
+
+  <h2 id="welcome">Interested in Learning more Chinese? Well, You've come to the right place!</h2>
+
+  <h2 id="welcome">Interested in Learning more Chinese?</h2>
+  <h2 id="welcome">Well, You've come to the right place!</h2>
+
+  <section class="about-section">
+
+  <section id="more_learning">
+    <h2>Learn more about ...</h2>
+    <li><link ref="culture.html">Culture</li>
+    <li><link ref="cardset.html">View the Study Sets</li>
+    <li><link ref="memorization.html">Memorization Tips and Tricks</li>
+  </section>
+
+  <section>
+  <!-- <div id="placeholder"> -->
+    <h2>Contact Us</h2>
+    <p>Is there something you want to see added?</p>
+    <p>Or any advice or feedback?</p>
+    <button><link ref="contactus.html">Contact us</button>
+  <!-- </div> -->
+  </section>
+
+</section>
+
+  <div id="placeholder">
+    <h2>About Us</h2>
+    <p>
+    (this tool's focus is on) Flashcards included premade sets based off of both the HSK() and Integrated Chinese Textbooks. With us learn not only vocab 
+    but learn more about how culture relates. Learning culture along with vocab is important to better remember and understand the 
+    vocab in addition with connecting words to culutraly relevant ideas and terms. As you study after reviewing every Flashcard
+    you have the opportunity to view the stroke order as well and practice it(this is functionality I need and hope to add). this 
+    will help you learn characters more effectively as well. You can also see your stats, what words you found hardest and easiest. 
+    This tool also has resources and strageties to help you memorize vocab becuase everyone learns differently!
+    </p>
+
+    <p>We hope this tool is useful to improve and increase your Chinese Language skills. We hope this helps you on your 
+      learning journey. Enjoy!
+    </p>
+
+    <p>
+      This application is open-source (<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3</a>) and the source code is available on <a href="https://github.com/mandarinstudytools">GitHub</a>.
+      Any help improving it is welcome.
+      You can submit bug reports, write new code or design a nicer interface.
+    </p>
+  </div>
+
+</main>
+
+<!--<br>: makes a line break-->
+<footer>
+  <p>Copy Right: Open Source. View <link href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file"GitHub Repo>.</p>
+  <p><a href="tel:6034431655">603 443 1655</a></p>
+  <p><a href = "mailto:ruddrebekah@gmail.com">ruddrebekah@gmail.com</a></p>
+  <p>Online Location Only, Store Address Coming Soon...</p>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
+<script defer src="https://apis.google.com/js/api.js"></script>
+<script type="module" src="main.js"></script>
+<script async type="module" src="menu.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {preview: "none"}
+});
+</script>
+<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full'></script>
+
+</body>
+</html>

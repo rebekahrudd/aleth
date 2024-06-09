@@ -1,19 +1,36 @@
 <!doctype html>
 <html lang="en">
+
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="img/icon-6.png" sizes="6x6">
-<link rel="icon" type="image/png" href="img/icon-12.png" sizes="12x12">
-<link rel="icon" type="image/png" href="img/icon-18.png" sizes="18x18">
-<link rel="icon" type="image/png" href="img/icon-24.png" sizes="24x24">
-<link rel="icon" type="image/png" href="img/icon-48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="img/icon-60.png" sizes="60x60">
-<link rel="icon" type="image/png" href="img/icon-120.png" sizes="120x120">
-<link rel="icon" type="image/png" href="img/icon-180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="img/icon-240.png" sizes="240x240">
-<link rel="icon" type="image/png" href="img/icon-480.png" sizes="480x480">
-<link rel="icon" type="image/png" href="img/icon-516.png" sizes="516x516">
 <link href="style.css" rel="stylesheet" type="text/css">
+<title>Mandarin Study Tools</title>
+</head>
+
+<body>
+<form id="main" class="edit" action="edit-card" method="post">
+  
+  <input name="id" id="id" type="text" style="display:none;">
+  <input name="deps" id="deps" type="text" style="display:none;">
+
+  <button id="edit-question" type="button" class="current">Edit</button><button id="preview-question" type="button">Preview</button>
+  <textarea name="question" id="question" placeholder="question" required></textarea>
+  <div id="question-preview" style="display:none;"></div>
+  
+  <button id="edit-answer" type="button" class="current">Edit</button><button id="preview-answer" type="button">Preview</button>
+  <textarea name="answer" id="answer" placeholder="answer" required></textarea>
+  <div id="answer-preview" style="display:none;"></div>
+
+  <div class="bar">
+    <button id="done" type="submit">Save</button>
+    <button id="cancel" type="button" onclick="location.href='.'">Cancel</button>
+  </div>
+
+  <p>To return to your card sets: <link ref="cardsets.html">Click Here</p>
+</form>
+
 <script type="module" src="controller.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
 <script defer src="edit.js"></script>
@@ -24,18 +41,13 @@ MathJax.Hub.Config({
 });
 </script>
 <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full'></script>
-<title>Aleth</title>
-<form id="main" class="edit" action="edit-card" method="post">
-  <input name="id" id="id" type="text" style="display:none;">
-  <input name="deps" id="deps" type="text" style="display:none;">
-  <button id="edit-question" type="button" class="current">Edit</button><button id="preview-question" type="button">Preview</button>
-  <textarea name="question" id="question" placeholder="question" required></textarea>
-  <div id="question-preview" style="display:none;"></div>
-  <button id="edit-answer" type="button" class="current">Edit</button><button id="preview-answer" type="button">Preview</button>
-  <textarea name="answer" id="answer" placeholder="answer" required></textarea>
-  <div id="answer-preview" style="display:none;"></div>
-  <div class="bar">
-    <button id="done" type="submit">Save</button>
-    <button id="cancel" type="button" onclick="location.href='.'">Cancel</button>
-  </div>
-</form>
+
+<footer>
+  <p>Copy Right: Open Source. View <link href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file"GitHub Repo>.</p>
+  <p><a href="tel:6034431655">603 443 1655</a></p>
+  <p><a href = "mailto:ruddrebekah@gmail.com">ruddrebekah@gmail.com</a></p>
+  <p>Online Location Only, Store Address Coming Soon...</p>
+</footer>
+
+</body>
+</html>

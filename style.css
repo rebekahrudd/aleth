@@ -1,12 +1,12 @@
-html {
+/* html {
   height: 100%;
-}
+} */
 
 body {
   background-color: #8dbefe;
   padding: 0;
   margin: 0;
-  height: calc(100% - 3em);
+  /* height: calc(100% - 3em); */
   font-family: sans-serif;
 }
 
@@ -15,6 +15,7 @@ body {
   border-radius: 1em;
   padding: 2em;
   margin: 1.5em;
+  /* margin: 3%; */
   overflow: auto;
 }
 
@@ -38,6 +39,7 @@ body {
   min-height: 37rem;
 }
 
+/* in edit.html */
 #question, #question-preview, #answer, #answer-preview {
   border: dashed #e0e0e0;
   border-radius: 1em;
@@ -77,6 +79,8 @@ textarea#answer, #answer-preview {
   min-height: 14rem;
 }
 
+
+/* none of the bellow affected the menu on the edit.html page */
 #hamburger, #menu {
   position: absolute;
   top: 0.5rem;
@@ -96,6 +100,7 @@ textarea#answer, #answer-preview {
   cursor: pointer;
 }
 
+/* the hover function wasn't working */
 #menu > *:hover {
   background-color: #6094d9;
 }
@@ -108,7 +113,8 @@ textarea#answer, #answer-preview {
   font-size: 1.5rem;
   border: 0;
   border-radius: 1.5rem;
-  background-color: #5087cf;
+  /* background-color: #5087cf; */
+  background-color: #8dbefe;
   color: black;
   cursor: pointer;
 }
@@ -229,4 +235,166 @@ code {
 pre code {
   padding: 0;
   background-color: inherit;
+}
+
+
+/* I added the bellow code */
+
+footer {
+  text-align: center;
+}
+
+/* START SMALL MEDIA SCREEN */
+@media screen and (max-width: 805px) { 
+
+  nav.tablet-desktop {
+    /* background-color: hwb(214 5% 21%);
+    padding: .5em */
+    /* if smaller than 630 pixels than don't display */
+    display: none;
+  }
+  
+  nav.mobile-nav {
+    /* display: none; */
+      /* if smaller than 630 pixels than display this version*/
+  
+  }
+}
+/* END SMALL MEDIA SCREEN */
+
+
+/* START LARGE MEDIA SCREEN */
+@media screen and (min-width: 805px) { 
+
+/* for the header - section start */
+nav.tablet-desktop {
+  background-color: hwb(214 5% 21%);
+  padding: .5em
+  /* if smaller than 630 pixels than don't display */
+}
+
+nav.mobile-nav {
+  display: none;
+    /* if smaller than 630 pixels than display this version*/
+}
+
+nav ul {
+ margin-inline-start: 0;
+ padding-inline-start: 0;
+}
+
+nav li {
+  /* border-top: none; */
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding-right: 3%; 
+  padding-left: 3%;
+}
+
+nav a {
+  color: white;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+}
+/* END MEDIA SCREEN */
+
+
+/* idk how the white bars get in there */
+a:link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+}
+
+a:visited {
+  text-decoration: none;
+}
+/* header end section */
+/* 805 pixels jump down to small size */
+
+
+/* about section place holder - only want this when the screen half or full not bellow the 630*/
+
+.about-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* column-gap: 20px; */
+}
+
+.about-section section {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2em;
+  margin: 1.5em;
+  border-radius: 1em;
+  overflow: auto;
+}
+
+#welcome {
+  text-align: center;
+}
+
+footer {
+  background-color:hwb(214 5% 21%);
+  /* position: absolute; */
+  margin: 0;
+  display: block;
+  color:#ffffff;
+  size: .75em;
+  /* getting rid of the margin for the little bit fo the footer */
+  /* margin-top: 1.5em;
+  margin-bottom: 1.5em; */
+  padding: 1em;
+  /* this didn't fix the issue */
+  /* padding: 1em; */
+}
+
+
+.intro {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2em;
+  margin: 1.5em;
+  border-radius: 1em;
+  overflow: auto;
+}
+
+.more_learning {
+  text-align: left;
+}
+
+h1 {
+  padding: 0;
+  font-size: 330%;
+  /* this is a off white and makes it a little easier on the eyes */
+  /* I want to think about what off white and what color hint I want in it */
+  /* Then I would make all the white the off white color */
+  /* color: hsl(27, 60%, 86%); */
+  /* I like the bellow off white better than the above one */
+  /* color: #ffdcdc; */
+  color:#fff;
+  background-color: hwb(214 5% 21%);
+  margin: 0;
+  /* text-align: center; */
+}
+
+.top-division {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 1rem 1rem;
+  /* background-color: hwb(214 5% 21%); */
+  /* TODO: change the move the text in the mandarin study tool sbox around */
+}
+
+.intro-color {
+  background-color: hwb(214 5% 21%);
 }
