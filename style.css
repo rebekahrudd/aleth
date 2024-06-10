@@ -99,7 +99,7 @@ textarea#answer, #answer-preview {
 }
 
 #menu > * {
-  padding: .75rem;
+  padding: .60rem;
   padding-right: 3rem;
   cursor: pointer;
 }
@@ -107,6 +107,7 @@ textarea#answer, #answer-preview {
 /* the hover function wasn't working */
 #menu > *:hover {
   background-color: #6094d9;
+
 }
 
 #hamburger {
