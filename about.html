@@ -9,7 +9,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" type="image/png" href="img/logo.png" sizes="6x6"> -->
   <link rel="icon" type="image/png" href="img/logo.jpg">
   <link rel="stylesheet" href="style.css" type="text/css">
   <title>Mandarin Study Tools</title>
@@ -28,74 +27,68 @@
           <button id="hamburger" type="button">&#9776;</button>
     </nav>
 
-  <!-- <section id="intro"> -->
-  <section class="intro-color">
-    <div class="top-division">
-      <!-- this isn't working as a link -->
-      <a href="about.html"><img src="img/logo.jpg" 
-        alt="Mandarin Study Tools Logo" width="150" height="150"></a>
-      <!-- <img src="img/logo.jpg" alt="Mandarin Study Tools Logo" width="150" height="150"> -->
-    </div>
-    <div class="top-division">
-      <h1>Mandarin Study Tools</h1>
-    </div>
+    <!-- Header Info -->
+  <section class="intro"> 
+    <section class="intro-color">
+      <div class="top-division">
+        <a href="about.html"><img src="img/logo.jpg" 
+          alt="Mandarin Study Tools Logo" width="150" height="150"></a>
+      </div>
+      <div class="top-division">
+        <h1>Mandarin Study Tools</h1>
+      </div>
+    </section>
+
+    <!--  Laptop Nav -->
+    <section>
+      <nav class="tablet-desktop">
+        <ul> 
+            <li><a href="cardsets.html">Study Sets</a> </li>
+            <li><a href="memorization.html">Memorization Tips & Tricks</a> </li>
+            <li><a href="culture.html">Cultural Connections</a> </li>
+            <li><a href="login.html">Login/Create Account</a></li>
+        </ul>
+      </nav>
+    </section>
   </section>
 
-  <!-- </div> -->
-  <section>
-    <nav class="tablet-desktop">
-      <ul> 
-          <li><a href="cardsets.html">Study Sets</a> </li>
-          <li><a href="memorization.html">Memorization Tips & Tricks</a> </li>
-          <li><a href="culture.html">Cultural Connections</a> </li>
-          <li><a href="login.html">Login/Create Account</a></li>
-      </ul>
-    </nav>
-  </section>
-</section>
+<!-- SECTION TO EDIT / ABOVE WILL STAY THE SAME ACROSS PAGES -->
 
 <main>
 
   <h2 id="welcome">Interested in Learning more Chinese? Well, You've come to the right place!</h2>
-
   <h2 id="welcome">Interested in Learning more Chinese?</h2>
   <h2 id="welcome">Well, You've come to the right place!</h2>
 
   <section class="about-section">
-
-  <section id="more_learning">
-    <h2>Learn more about ...</h2>
-    <li><link ref="culture.html">Culture</li>
-    <li><link ref="cardset.html">View the Study Sets</li>
-    <li><link ref="memorization.html">Memorization Tips and Tricks</li>
+    <section id="more_learning">
+      <h2>Learn more about ...</h2>
+      <li><link ref="culture.html">Culture</li>
+      <li><link ref="cardset.html">View the Study Sets</li>
+      <li><link ref="memorization.html">Memorization Tips and Tricks</li>
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Is there something you want to see added?</p>
+      <p>Or any advice or feedback?</p>
+      <button><link ref="contactus.html">Contact us</button>
+    </section>
   </section>
-
-  <section>
-  <!-- <div id="placeholder"> -->
-    <h2>Contact Us</h2>
-    <p>Is there something you want to see added?</p>
-    <p>Or any advice or feedback?</p>
-    <button><link ref="contactus.html">Contact us</button>
-  <!-- </div> -->
-  </section>
-
-</section>
 
   <div id="placeholder">
     <h2>About Us</h2>
     <p>
-    (this tool's focus is on) Flashcards included premade sets based off of both the HSK() and Integrated Chinese Textbooks. With us learn not only vocab 
-    but learn more about how culture relates. Learning culture along with vocab is important to better remember and understand the 
-    vocab in addition with connecting words to culutraly relevant ideas and terms. As you study after reviewing every Flashcard
-    you have the opportunity to view the stroke order as well and practice it(this is functionality I need and hope to add). this 
-    will help you learn characters more effectively as well. You can also see your stats, what words you found hardest and easiest. 
-    This tool also has resources and strageties to help you memorize vocab becuase everyone learns differently!
+      (this tool's focus is on) Flashcards included premade sets based off of both the HSK() and Integrated Chinese Textbooks. With us learn not only vocab 
+      but learn more about how culture relates. Learning culture along with vocab is important to better remember and understand the 
+      vocab in addition with connecting words to culutraly relevant ideas and terms. As you study after reviewing every Flashcard
+      you have the opportunity to view the stroke order as well and practice it(this is functionality I need and hope to add). this 
+      will help you learn characters more effectively as well. You can also see your stats, what words you found hardest and easiest. 
+      This tool also has resources and strageties to help you memorize vocab becuase everyone learns differently!
     </p>
-
-    <p>We hope this tool is useful to improve and increase your Chinese Language skills. We hope this helps you on your 
+    <p>
+      We hope this tool is useful to improve and increase your Chinese Language skills. We hope this helps you on your 
       learning journey. Enjoy!
     </p>
-
     <p>
       This application is open-source (<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3</a>) and the source code is available on <a href="https://github.com/mandarinstudytools">GitHub</a>.
       Any help improving it is welcome.
@@ -105,7 +98,9 @@
 
 </main>
 
-<!--<br>: makes a line break-->
+<!-- BELLOW IS COPIED IN / BELLOW WILL STAY THE SAME ACROSS PAGES-->
+
+<!-- Footer -->
 <footer>
   <p>Copy Right: Open Source. View <link href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file"GitHub Repo>.</p>
   <p><a href="tel:6034431655">603 443 1655</a></p>
@@ -113,6 +108,7 @@
   <p>Online Location Only, Store Address Coming Soon...</p>
 </footer>
 
+<!-- Java Script - I don't get all this -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
 <script defer src="https://apis.google.com/js/api.js"></script>
 <script type="module" src="main.js"></script>
@@ -127,3 +123,10 @@ MathJax.Hub.Config({
 
 </body>
 </html>
+
+
+<!-- TODO: Code for connecting to drive - not working yet -->
+<!-- <div id="menu" style="display:none;">
+      <div id="drive-in" style="display:none;">Enable synchronization with Google Drive</div>
+      <div id="drive-out" style="display:none;">Sign out of Google Drive</div>
+     </div> -->

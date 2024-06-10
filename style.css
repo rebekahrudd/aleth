@@ -1,6 +1,6 @@
-/* html {
+html {
   height: 100%;
-} */
+}
 
 /* TODO: have the hamburger menu change into an X*/
 /* TODO: change the color of the hamburger menu */
@@ -10,8 +10,9 @@ body {
   background-color: #8dbefe;
   padding: 0;
   margin: 0;
-  /* height: calc(100% - 3em); */
+  height: calc(100% - 3em);
   font-family: sans-serif;
+
 }
 
 #main, #placeholder {
@@ -247,6 +248,8 @@ pre code {
 
 footer {
   text-align: center;
+  position: bottom;
+
 }
 
 /* START SMALL MEDIA SCREEN */
@@ -360,7 +363,7 @@ footer {
 }
 
 
-.intro {
+/* .intro {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 20px;
@@ -371,7 +374,7 @@ footer {
   margin: 1.5em;
   border-radius: 1em;
   overflow: auto;
-}
+} */
 
 .more_learning {
   text-align: left;
@@ -402,4 +405,16 @@ h1 {
 
 .intro-color {
   background-color: hwb(214 5% 21%);
+}
+
+/* moving the footer to the bottom for all the pages*/
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }

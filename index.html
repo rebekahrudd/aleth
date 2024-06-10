@@ -1,30 +1,74 @@
 <!doctype html>
+<!-- This website template was created added to by Rebekah Rudd -->
+
+<!--notes: 
+-->
+
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#5087cf">
-<meta name="Description" content="Simple flashcards">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" href="img/icon-6.png" sizes="6x6">
-<link href="style.css" rel="stylesheet" type="text/css">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Mandarin Study Tools</title>
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
-<script defer src="https://apis.google.com/js/api.js"></script>
-<script type="module" src="main.js"></script>
-<script async type="module" src="menu.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {preview: "none"}
-});
-</script>
-<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full'></script>
+  <!-- Extra code from this page / not sure what some of this does-->
+  <meta name="theme-color" content="#5087cf">
+  <meta name="Description" content="Simple flashcards">
+  <link rel="manifest" href="manifest.json">
+</head>
 
-<title>Aleth</title>
+<body>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+          <div id="menu" style="display:none;">
+            <div onclick="location.href='cardsets.html'">Study Sets </div>
+            <div onclick="location.href='memorization.html'">Memorization Tips & Tricks</div>
+            <div onclick="location.href='culture.html'">Cultural Connections</div>
+            <div onclick="location.href='login.html'">Login/Create Account</div>
+          </div>
+          <button id="hamburger" type="button">&#9776;</button>
+    </nav>
+
+    <!-- Header Info -->
+  <section class="intro"> 
+    <section class="intro-color">
+      <div class="top-division">
+        <a href="about.html"><img src="img/logo.jpg" 
+          alt="Mandarin Study Tools Logo" width="150" height="150"></a>
+      </div>
+      <div class="top-division">
+        <h1>Mandarin Study Tools</h1>
+      </div>
+    </section>
+
+    <!--  Laptop Nav -->
+    <section>
+      <nav class="tablet-desktop">
+        <ul> 
+            <li><a href="cardsets.html">Study Sets</a> </li>
+            <li><a href="memorization.html">Memorization Tips & Tricks</a> </li>
+            <li><a href="culture.html">Cultural Connections</a> </li>
+            <li><a href="login.html">Login/Create Account</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+
+<!-- SECTION TO EDIT / ABOVE WILL STAY THE SAME ACROSS PAGES -->
+
+<main>
+
+<!-- bellow to edit -->
+
 <div id="placeholder">
   <p>There is no card to review now.</p>
   <div id="create" onclick="location.href='edit.html'">Create a new card</div>
 </div>
+
+<!-- TODO: understand how the bellow code works -->
 <div id="main" style="display:none;">
   <div id="question"></div>
   <div id="back">
@@ -39,15 +83,42 @@ MathJax.Hub.Config({
     </form>
   </div>
 </div>
-<div id="menu" style="display:none;">
 
-  <div id="drive-in" style="display:none;">Enable synchronization with Google Drive</div>
-  <div id="drive-out" style="display:none;">Sign out of Google Drive</div>
-  <div id="edit" style="display:none;">Edit card</div>
-  <div id="delete" style="display:none;">Delete card</div>
 
-  <div onclick="location.href='edit.html'">Create new card</div>
-  <div onclick="location.href='about.html'">About Aleth</div>
+<!-- BELLOW IS COPIED IN / BELLOW WILL STAY THE SAME ACROSS PAGES-->
 
-</div>
-<button id="hamburger" type="button">&#9776;</button>
+<!-- Footer -->
+<footer>
+  <p>Copy Right: Open Source. View <link href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file"GitHub Repo>.</p>
+  <p><a href="tel:6034431655">603 443 1655</a></p>
+  <p><a href = "mailto:ruddrebekah@gmail.com">ruddrebekah@gmail.com</a></p>
+  <p>Online Location Only, Store Address Coming Soon...</p>
+</footer>
+
+<!-- Java Script - I don't get all this -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
+<script defer src="https://apis.google.com/js/api.js"></script>
+<script type="module" src="main.js"></script>
+<script async type="module" src="menu.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {preview: "none"}
+});
+</script>
+<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full'></script>
+
+<!-- script stuff from this document same as about-->
+
+</body>
+</html>
+
+<!-- TODO: Code for connecting to drive - not working yet -->
+<!-- <div id="menu" style="display:none;">
+      <div id="drive-in" style="display:none;">Enable synchronization with Google Drive</div>
+      <div id="drive-out" style="display:none;">Sign out of Google Drive</div>
+     </div> -->
+
+<!-- Added drive code -->
+<!-- <div id="edit" style="display:none;">Edit card</div>
+     <div id="delete" style="display:none;">Delete card</div> -->
