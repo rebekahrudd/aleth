@@ -86,6 +86,7 @@ function getSrcs(element) {
   return srcs;
 }
 
+// this def does not work yet but I'm starting to see what they're getting at
 let main = document.getElementById('main');
 let deps = document.getElementById('deps');
 main.onsubmit = () => {
