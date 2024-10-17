@@ -60,22 +60,44 @@
   <table id="dashboard">
     <thead>
       <tr>
-        <th></th>
+        <!-- <th></th> -->
         <th class="date">Deck Name</th>
         <th class="date">Last Reviewed</th>
         <th class="date">Memorization Progress</th>
-        <th class="date">Character Writing Progress</th>
       </tr>
+
     </thead>
 
     <!-- this is referenced in the java script - change and see what it originally did, did nothing rn, 
      the body is just the white space, not sure what the "let" function does -->
-    <tbody id="dashboard-body">
+    <!-- <tbody id="dashboard-body">
+    </tbody> -->
+    <tbody>
+      <tr>
+        <!-- a link to each set -->
+        <td class = "deck_name"><a href="study.html">Set 1</td>
+          <!-- call this from the back sql -->
+        <td class = "last_reviewed">October 10th 2024 11:59pm</td>
+        <td class = "memorization_progress">90%</td>
+      </tr>
+      <tr>
+      <td class = "deck_name"><a href="study.html">Set 1</td>
+        <!-- call this from the back sql -->
+      <td class = "last_reviewed">October 10th 2024 11:59pm</td>
+      <td class = "memorization_progress">90%</td>
+      </tr>
     </tbody>
+<!--     
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot> -->
+
   </table>
   
-  <p>Would you like to create your own set?</p>
-  <p><link ref="create.html">Click Here</p>
+  <p>Would you like to create your own set? <a href="create.html">Create Personalized Set</a></p>
 
 </div>
 
@@ -83,7 +105,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>Copy Right: Open Source. View <link href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file"GitHub Repo>.</p>
+  <p>Copy Right: Open Source. View the <a href="https://github.com/CMPSC-580-Allegheny-College-Spring-2024/mandarin-studytools-rebekahrudd?tab=readme-ov-file">GitHub Repo</a>.</p>
   <p><a href="tel:6034431655">603 443 1655</a></p>
   <p><a href = "mailto:ruddrebekah@gmail.com">ruddrebekah@gmail.com</a></p>
   <p>Online Location Only, Store Address Coming Soon...</p>

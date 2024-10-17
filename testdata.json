@@ -1,22 +1,42 @@
 {
-    "person": [
+    "hsk1": [
         {
-            "firstName": "Clark",
-            "lastName": "Kent",
-            "job": "Reporter",
-            "roll": 20
+            "character": "啊",
+            "pinyin_tone": "ā",
+            "english_meaning": "ah",
+            "stroke_order": "path_to_pic.svg"
         },
         {
-            "firstName": "Bruce",
-            "lastName": "Wayne",
-            "job": "Playboy",
-            "roll": 30
+            "character": "矮",
+            "pinyin_tone": "ǎi",
+            "english_meaning": "short; low",
+            "stroke_order": "path_to_pic.svg"
         },
         {
-            "firstName": "Peter",
-            "lastName": "Parker",
-            "job": "Photographer",
-            "roll": 40
+            "character": "爱; 愛",
+            "pinyin_tone": "ài",
+            "english_meaning": "love",
+            "stroke_order": "path_to_pic.svg"
         }
-    ]
+    ], 
+        "hsk2": [
+            {
+                "character": "啊",
+                "pinyin_tone": "ā",
+                "english_meaning": "ah",
+                "stroke_order": "path_to_pic.svg"
+            },
+            {
+                "character": "矮",
+                "pinyin_tone": "ǎi",
+                "english_meaning": "short; low",
+                "stroke_order": "path_to_pic.svg"
+            },
+            {
+                "character": "爱; 愛",
+                "pinyin_tone": "ài",
+                "english_meaning": "love",
+                "stroke_order": "path_to_pic.svg"
+            }
+        ]
  }

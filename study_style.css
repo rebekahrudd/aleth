@@ -1,0 +1,13 @@
+
+/* Flashcards */
+
+section.front {
+    border: floralwhite;
+    align-items: center;
+  }
+  
+section.back {
+    border: #fff;
+    align-items: start;
+    color: #fff;
+  }

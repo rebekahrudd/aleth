@@ -418,3 +418,38 @@ body {
 footer {
   margin-top: auto;
 }
+
+/* Flashcards */
+
+section.front {
+  /* border: floralwhite; */
+  /* align-items: center; */
+  background-color: #dbdbdb;
+  margin: 15%;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 15%;
+}
+
+section.back {
+  /* border: #fff; */
+  /* align-items: start; */
+  background-color: #fff;
+  /* border-style: dotted; */
+  margin: 15%;
+  text-align: center;
+  margin-top: 0;
+  padding: 15%;
+}
+
+section.card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+section.svg img {
+  /* align-content: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
