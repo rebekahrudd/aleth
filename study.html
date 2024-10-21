@@ -56,38 +56,70 @@
 
 <main>
 
-    <!-- <p>Page Holder</p> -->
+      <div class="term">
+        <h3>term</h3>
+      </div>
+      <div class="definition">
+        <h3>definition</h3>
+      </div>
+      <div class="button">
+        <button class="check">Check Definition</button>
+        <button class="next">Next Definition</button>
+      </div>
 
-    <!-- for card in set show card -->
-     <!-- <p class = "card">info from the back</p> -->
 
-     <section class="card">
+      <div id="add_to_me">
+        <h1>GeeksforGeeks</h1>
+        <p>
+            This is the text which has
+            already been typed into
+            the div
+        </p>
+    </div>
+
+      <!-- <button class="adding_text">
+        Add Stuff
+      </button> -->
+
+
+
+     <section id="card">
 
         <section>
             <!-- these will need to be editable based on the study sets that they are creating -->
         <!-- from json english -->
-        <section class = "front">english place holder</section>
+        <section class = "item1">english place holder</section>
         <!-- from json pinyin -->
-        <section class = "back">pinyin place holder</section>
+        <section class = "item2">pinyin place holder</section>
         <!-- from json character -->
-        <section class = "back">mandarin place holder</section>
+        <section class = "item3">mandarin place holder</section>
         <!-- from json svgs path -->
-        <section class = "svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
+        <section class = "item_svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
         </section>
 
         <section>
-        <section class = "front">front place holder</section>
-        <section class = "back">back place holder</section>
-        <section class = "svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
+          <!-- these will need to be editable based on the study sets that they are creating -->
+        <!-- from json english -->
+        <section class = "item1">english place holder</section>
+        <!-- from json pinyin -->
+        <section class = "item2">pinyin place holder</section>
+        <!-- from json character -->
+        <section class = "item3">mandarin place holder</section>
+        <!-- from json svgs path -->
+        <section class = "item_svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
         </section>
 
         <section>
-        <section class = "front">front place holder</section>
-        <section class = "back">back place holder</section>
-        <section class = "svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
+          <!-- these will need to be editable based on the study sets that they are creating -->
+        <!-- from json english -->
+        <section class = "item1">english place holder</section>
+        <!-- from json pinyin -->
+        <section class = "item2">pinyin place holder</section>
+        <!-- from json character -->
+        <section class = "item3">mandarin place holder</section>
+        <!-- from json svgs path -->
+        <section class = "item_svg"><img src="img/logo.jpg" alt="character name" width="150" height="150"></section>
         </section>
-     
-     </section>
 
 </main>
 
@@ -101,18 +133,8 @@
     <p>Online Location Only, Store Address Coming Soon...</p>
   </footer>
   
-  <!-- Java Script - I don't get all this -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
-  <script defer src="https://apis.google.com/js/api.js"></script>
-  <script type="module" src="main.js"></script>
-  <script async type="module" src="menu.js"></script>
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    messageStyle: "none",
-    tex2jax: {preview: "none"}
-  });
-  </script>
-  <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full'></script>
+  <!-- Java Script -->
+  <script src="study.js"></script>
   
   </body>
   </html>

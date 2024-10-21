@@ -421,9 +421,7 @@ footer {
 
 /* Flashcards */
 
-section.front {
-  /* border: floralwhite; */
-  /* align-items: center; */
+section.item1 {
   background-color: #dbdbdb;
   margin: 15%;
   text-align: center;
@@ -431,25 +429,35 @@ section.front {
   padding: 15%;
 }
 
-section.back {
-  /* border: #fff; */
-  /* align-items: start; */
+section.item2 {
   background-color: #fff;
   /* border-style: dotted; */
   margin: 15%;
   text-align: center;
   margin-top: 0;
   padding: 15%;
+  margin-bottom: 0;
 }
 
-section.card {
+section.item3 {
+  background-color: #dbdbdb;
+  margin: 15%;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 15%;
+  margin-top: 0;
+}
+
+section#card {
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
-section.svg img {
+section.item_svg img {
   /* align-content: center; */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  /* margin-top: 0; */
+  margin-bottom: 15%;
 }
