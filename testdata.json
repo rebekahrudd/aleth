@@ -1,19 +1,22 @@
 {
     "hsk1": [
         {
-            "character": "啊",
+            "simplified_character": "啊",
+            "traditional_character": "None",
             "pinyin_tone": "ā",
             "english_meaning": "ah",
             "stroke_order": "path_to_pic.svg"
         },
         {
-            "character": "矮",
+            "simplified_character": "矮",
+            "traditional_character": "None",
             "pinyin_tone": "ǎi",
             "english_meaning": "short; low",
             "stroke_order": "path_to_pic.svg"
         },
         {
-            "character": "爱; 愛",
+            "simplified_character": "爱",
+            "traditional_character": "愛",
             "pinyin_tone": "ài",
             "english_meaning": "love",
             "stroke_order": "path_to_pic.svg"
@@ -21,19 +24,22 @@
     ], 
         "hsk2": [
             {
-                "character": "啊",
+                "simplified_character": "啊",
+                "traditional_character": "None",
                 "pinyin_tone": "ā",
                 "english_meaning": "ah",
                 "stroke_order": "path_to_pic.svg"
             },
             {
-                "character": "矮",
+                "simplified_character": "矮",
+                "traditional_character": "None",
                 "pinyin_tone": "ǎi",
                 "english_meaning": "short; low",
                 "stroke_order": "path_to_pic.svg"
             },
             {
-                "character": "爱; 愛",
+                "simplified_character": "爱; 愛",
+                "traditional_character": "None",
                 "pinyin_tone": "ài",
                 "english_meaning": "love",
                 "stroke_order": "path_to_pic.svg"
